@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <nav class="nav">
+                <h1>Personal Savings Goal Planner</h1>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="summary">
+                <div class="stat">
+                    <strong id="total-goals">0</strong>
+                    <span>Completed Goals</span>
+                </div>
+                <div class="stat">
+                    <strong id="total-saved">0 AFN</strong>
+                    <span>Total Saved</span>
+                </div>
+                <div class="stat">
+                    <strong id="total-target">0 AFN</strong>
+                    <span>Total Target</span>
+                </div>
+            </section>
+            <section class="workspace">
+                <div class="main-panel">
+                    <h2>My Savings Goals</h2>
+                    <div class="cards" id="goal-cards">
+                    </div>
+                </div>
+                <aside class="side-panel">
+                    <div class="panel">
+                        <h2>New Goal</h2>
+                        <form action="#" id="goal-form">
+                            <div class="field">
+                                <label for="goal-title">Goal Title</label>
+                                <input type="text" id="goal-title" required>
+                            </div>
+                            <div class="field">
+                                <label for="goal-target">Target Amount</label>
+                                <input type="number" id="goal-target" min="1" required>
+                            </div>
+                            <div class="actions">
+                                <input type="submit" value="Add Goal" class="btn">
+                                <input type="reset" value="Clear" class="btn-secondary">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel">
+                        <h2>Add Savings</h2>
+                        <form action="#" id="movement-form">
+                            <div class="field">
+                                <label for="goal-select">Select Goal</label>
+                                <input type="search" placeholder="Search Goals" id="search">
+                            </div>
+                            <div class="field">
+                                <label for="movement-amount">Amount</label>
+                                <input type="number" id="movement-amount" min="1" required>
+                            </div>
+                            <div class="actions">
+                                <input type="submit" class="btn" id="submit" value="Add Money" name="action">
+                                <input type="submit" class="btn" id="Withdraw" value="Withdraw" name="action">
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </main>
+    <footer class="app-footer">
+        <div class="container">
+            <p>Personal Savings Goal Planner</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
